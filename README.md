@@ -17,13 +17,13 @@ Una aplicación web simple para gestionar tus tareas diarias. Hecha con HTML, CS
 - LocalStorage para guardar datos localmente
 
 ## 📁 Estructura del proyecto
-
+```
 ├── index.html
 ├── css/
 │ └── styles.css
 └── js/
 └── apps.js
-
+```
 
 ## 🚀 Cómo usar
 
