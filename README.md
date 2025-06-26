@@ -18,3 +18,20 @@ Una aplicación web simple para gestionar tus tareas diarias. Hecha con HTML, CS
 
 ## 📁 Estructura del proyecto
 
+├── index.html
+├── css/
+│ └── styles.css
+└── js/
+└── apps.js
+
+
+## 🚀 Cómo usar
+
+1. Clona o descarga este repositorio.
+2. Abre `index.html` en tu navegador (no requiere servidor).
+3. ¡Empieza a gestionar tus tareas!
+
+## 📝 Notas
+
+- Todas las tareas se guardan automáticamente en el almacenamiento local del navegador.
+- El estado se mantiene aunque cierres o recargues la página.
