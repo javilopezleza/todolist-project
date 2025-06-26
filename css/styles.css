@@ -91,3 +91,32 @@
   text-decoration: underline; /* Underline on hover */
   font-weight: bold;
 }
+
+/* Style buttons inside task items */
+#todo-list li button {
+  margin-left: 10px; /* space between task text and buttons */
+  margin-right: 5px;
+  margin-bottom: 10px; /* space between buttons */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff; /* blue background */
+  color: white;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for buttons */
+#todo-list li button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: different style for the delete button */
+#todo-list li button:last-child {
+  background-color: #dc3545; /* red background */
+}
+
+#todo-list li button:last-child:hover {
+  background-color: #a71d2a;
+}
