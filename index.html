@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Todo List</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo List</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
 
-  <header>
-    <h1>Todo List</h1>
-    <h2>Una aplicación simple de una todo list</h2>
-  </header>
+        <header>
+            <h1>Todo List</h1>
+            <h2>A simple todo list application</h2>
+        </header>
 
-  <div class="todo-complete">
-    <!-- Bloque izquierdo: Formulario -->
-    <aside id="left-panel">
-      <form id="todo-form">
-        <input type="text" name="todo-input" id="todo-input" placeholder="Añadir una nueva tarea" required />
-        <button id="add-button">Añadir</button>
-      </form>
-    </aside>
+        <div class="todo-complete">
+            <!-- Left block: Form -->
+            <aside id="left-panel">
+                <form id="todo-form">
+                    <input
+                        type="text"
+                        name="todo-input"
+                        id="todo-input"
+                        placeholder="Add a new task"
+                        required />
+                    <button id="add-button">Add</button>
+                </form>
+            </aside>
 
-    <!-- Bloque derecho: Lista de tareas -->
-    <main id="right-panel">
-      <!-- Filtros primero -->
-      <div id="filter">
-        <button value="all">Todas</button>
-        <button value="completed">Completadas</button>
-        <button value="pending">Pendientes</button>
-      </div>
+            <!-- Right block: Task list -->
+            <main id="right-panel">
+                <!-- Filters first -->
+                <div id="filter">
+                    <button value="all">All</button>
+                    <button value="completed">Completed</button>
+                    <button value="pending">Pending</button>
+                </div>
 
-      <!-- Lista de tareas -->
-      <div class="todo-list-container">
-        <ul id="todo-list">
-          <!-- Tareas dinámicas -->
-        </ul>
-      </div>
-    </main>
-  </div>
+                <!-- Task list container -->
+                <div class="todo-list-container">
+                    <ul id="todo-list">
+                        <!-- Dynamic tasks will be inserted here -->
+                    </ul>
+                </div>
+            </main>
+        </div>
 
-  <script src="js/apps.js"></script>
-</body>
+        <footer class="foot-text">
+            <p>Made with ❤️ by <a class="foot-link"
+                    href="https://javilolez-portfolio.netlify.app/index">Javilolez</a> &copy</p>
+        </footer>
+
+        <script src="js/apps.js"></script>
+    </body>
 </html>

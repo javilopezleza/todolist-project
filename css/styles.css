@@ -2,28 +2,28 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 100vh;
+  height: auto; /* Full viewport height */
 }
 
-/* Panel izquierdo fijo */
+/* Left panel fixed */
 #left-panel {
   width: 250px;
   padding: 20px;
   background-color: #eaeaea;
-  position: sticky;
+  position: sticky; /* Keeps panel visible while scrolling */
   top: 0;
-  height: 100vh;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate panels */
 }
 
-/* Panel derecho puede crecer */
+/* Right panel can grow */
 #right-panel {
-  flex: 1;
+  flex: 1; /* Takes remaining space */
   padding: 20px;
-  overflow-y: auto;
+  overflow-y: auto; /* Scroll vertically if content overflows */
 }
 
-/* Lista de tareas */
+/* Task list container */
 .todo-list-container {
   width: 100%;
   max-width: 600px;
@@ -31,37 +31,63 @@
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
   font-family: Arial, sans-serif;
   color: #333;
 }
 
+/* Filter buttons container */
 #filter {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 10px; /* Space between buttons */
   margin-bottom: 20px;
 }
 
+/* Filter buttons style */
 #filter button {
   padding: 8px 16px;
   border: none;
   background-color: #dddddd;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease; /* Smooth hover transition */
 }
 
 #filter button:hover {
-  background-color: #bbb;
+  background-color: #bbb; /* Darker on hover */
 }
 
+/* Active filter button style */
 #filter button.active {
-  background-color: #007bff;
+  background-color: #007bff; /* Blue background */
   color: white;
 }
 
+/* Completed task style */
 .completed {
-  text-decoration: line-through;
-  opacity: 0.6;
+  text-decoration: line-through; /* Strike-through text */
+  opacity: 0.6; /* Slightly faded */
+}
+
+.foot-text {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.foot-text p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.foot-link {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+}
+
+.foot-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  font-weight: bold;
 }
