@@ -35,3 +35,6 @@ Una aplicación web simple para gestionar tus tareas diarias. Hecha con HTML, CS
 
 - Todas las tareas se guardan automáticamente en el almacenamiento local del navegador.
 - El estado se mantiene aunque cierres o recargues la página.
+
+
+
