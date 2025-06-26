@@ -22,7 +22,7 @@ Una aplicación web simple para gestionar tus tareas diarias. Hecha con HTML, CS
 ├── css/
 │ └── styles.css
 └── js/
-└── apps.js
+  └── apps.js
 ```
 
 ## 🚀 Cómo usar
